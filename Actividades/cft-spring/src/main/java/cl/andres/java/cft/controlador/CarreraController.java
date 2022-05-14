@@ -1,4 +1,4 @@
-package cl.andres.java.cft;
+package cl.andres.java.cft.controlador;
 
 import java.util.List;
 
@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import cl.andres.java.cft.modelo.Carrera;
 import cl.andres.java.cft.repository.CarreraRepository;
 
 @Controller

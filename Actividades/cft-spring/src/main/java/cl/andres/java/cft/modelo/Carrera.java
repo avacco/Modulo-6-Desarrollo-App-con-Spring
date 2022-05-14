@@ -1,4 +1,4 @@
-package cl.andres.java.cft;
+package cl.andres.java.cft.modelo;
 
 import javax.validation.constraints.Min;
 import javax.validation.constraints.Size;

@@ -1,4 +1,4 @@
-package cl.andres.java.cft;
+package cl.andres.java.cft.controlador;
 
 import java.util.List;
 
@@ -14,7 +14,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import cl.andres.java.cft.modelo.Alumno;
+import cl.andres.java.cft.modelo.Carrera;
 import cl.andres.java.cft.repository.AlumnoRepository;
+import cl.andres.java.cft.repository.CarreraRepository;
 
 @Controller
 @RequestMapping("/alumno") // la ruta absoluta es localhost:xxxx/alumno
@@ -23,8 +26,13 @@ public class AlumnoController {
 	@Autowired
 	AlumnoRepository alumnoRepository;
 	
+	@Autowired
+	CarreraRepository carreraRepository;
+	
 	@GetMapping("/nuevo") // las vistas nuevas agregan su mapping a la ruta absoluta. este es localhost:xxxx/alumno/nuevo
-	public String alumnoNuevo(Alumno alumno) {
+	public String alumnoNuevo(Alumno alumno, Model modelo) {
+		List<Carrera> carreras = carreraRepository.findAll();
+		modelo.addAttribute("carreras", carreras);
 		return "alumno/form";
 	}
 	

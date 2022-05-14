@@ -1,4 +1,4 @@
-package cl.andres.java.cft;
+package cl.andres.java.cft.controlador;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

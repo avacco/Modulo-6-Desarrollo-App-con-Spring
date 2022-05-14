@@ -1,4 +1,4 @@
-package cl.andres.java.cft;
+package cl.andres.java.cft.modelo;
 
 import java.time.LocalDate;
 
@@ -15,7 +15,7 @@ public class Alumno {
 	private String nombre;
 	
 	private LocalDate fechaNacimiento;
-	
+	private Carrera carrera;
 	// Si estos "test" no se cumplen, tiraran errores en el controlador a la hora de intentar hacer POST.
 	// Desde el mismo controlador se decidiran las acciones a tomar en caso de error
 	
@@ -23,11 +23,12 @@ public class Alumno {
 	public Alumno() {	
 	}
 
-	public Alumno(int id,  String nombre, LocalDate fechaNacimiento) {
+	public Alumno(int id,  String nombre, LocalDate fechaNacimiento, Carrera carrera) {
 		super();
 		this.id = id;
 		this.nombre = nombre;
 		this.fechaNacimiento = fechaNacimiento;
+		this.carrera = carrera;
 	}
 	
 	public int getId() {
@@ -52,6 +53,14 @@ public class Alumno {
 
 	public void setFechaNacimiento(LocalDate fechaNacimiento) {
 		this.fechaNacimiento = fechaNacimiento;
+	}
+
+	public Carrera getCarrera() {
+		return carrera;
+	}
+
+	public void setCarrera(Carrera carrera) {
+		this.carrera = carrera;
 	}
 
 	
