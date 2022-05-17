@@ -11,7 +11,7 @@ public class Proveedor {
 
 	// JPA se encarga a traves de esta anotacion de identificar la PK
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)  // con esto JPA genera la tabla con nombre de la clase y columnas de nombre de los atributos 
+	@GeneratedValue(strategy = GenerationType.AUTO)  // Con esto JPA genera la tabla con nombre de la clase y columnas de nombre de los atributos 
 	private Long id;
 	@Column(nullable = false, length = 10)
 	private String rut;
