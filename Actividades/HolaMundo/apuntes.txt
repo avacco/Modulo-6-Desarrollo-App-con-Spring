@@ -1,4 +1,0 @@
-Comandos maven:
-.\mvnw clean
-
-.\mvnw dependency:list -DincludeArtifactIds=thymeleaf
