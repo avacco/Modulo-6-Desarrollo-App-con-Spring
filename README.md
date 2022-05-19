@@ -4,6 +4,5 @@ Repositorio para actividades y contenidos en general de modulo 6 de Bootcamp Jav
 ## Trabajo en clases
 Actividades mudadas a sus propios repositorios.
 
-1. [HolaMundo-Spring](https://github.com/avacco/HolaMundo-Spring)
-2. [CFT-Spring](https://github.com/avacco/cft-spring)
-3. [Tesoreria-JPA](https://github.com/avacco/tesoreria-jpa)
+1. [CFT-Spring](https://github.com/avacco/cft-spring)
+2. [Tesoreria-JPA](https://github.com/avacco/tesoreria-jpa)
