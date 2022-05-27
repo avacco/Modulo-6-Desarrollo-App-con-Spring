@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head data-th-replace="parts/head :: cabecera(~{::title}, _)">
+<meta charset="UTF-8">
+<title>Listado categoria</title>
+</head>
+<body class="body-light">
+<main class="container">
+<h1 class="border-bottom pb-2 mb-0" align="center"> Categorias</h1>
+<div class="my-3 p-3 bg-body rounded shadow-sm">
+  	<table id="sortTable" class="table">
+
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>Nombre</th>
+			<th>Acciones</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr  data-th-each="categoria : ${categorias}">
+			<th data-th-text="${categoria.id}"></th>
+			<th data-th-text="${categoria.nombre}"></th>
+			<td>
+				<a data-th-href="@{/categoria/editar/{categoriaId}(categoriaId=${categoria.id})}">Editar</a>
+				<a data-th-href="@{/categoria/eliminar(id=${categoria.id})}">Eliminar</a>
+			</td>
+		</tr>
+	</tbody>
+	</table>
+</div>
+
+<div class="my-3 p-3 bg-body rounded shadow-sm">
+	<a class="btn btn-primary" data-th-href="@{/}">Volver</a>
+</div>
+</main>
+<div data-th-replace="parts/scripts :: scripts"></div>
+<div data-th-replace="parts/tablesort :: tablesort"></div>
+</body>
+</html>
