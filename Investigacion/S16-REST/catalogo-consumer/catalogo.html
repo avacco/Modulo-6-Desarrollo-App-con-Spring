@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Catalogo Productos</h1>
+	
+	<script>
+	fetch('http://localhost:8080/productos/destacados')
+	  .then(response => response.json())
+	  .then(data => console.log(data))
+	  ;
+	</script>
+</body>
+</html>
