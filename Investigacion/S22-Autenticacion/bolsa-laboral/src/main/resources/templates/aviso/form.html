@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head data-th-replace="parts/head :: cabecera(~{::title}, _)">
+	<meta charset="UTF-8">
+	<title>Formulario</title>
+</head>
+<body>
+	
+	<nav data-th-replace="parts/menu :: menu"></nav>
+	<main class="container">	
+		<h1>Formulario</h1>
+			
+		<form data-th-action="@{/aviso/crear}" data-th-object="${aviso}" method="post">
+		
+			<div data-th-if="${#fields.hasErrors('titulo')}" class="alert alert-danger">
+							Error
+			</div>
+			
+			Titulo: <input class="form-control" type="text" data-th-field="*{titulo}"/>	<br/>
+			Descripcion: <br/>
+			<textarea class="form-control" data-th-field="*{descripcion}" rows="10" cols="10"></textarea> <br/>
+			<button class="btn btn-primary" type="submit">Publicar</button>
+		
+		</form>	
+		
+		<div data-th-replace="parts/scripts :: scripts"></div>
+	</main>
+</body>
+</html>
