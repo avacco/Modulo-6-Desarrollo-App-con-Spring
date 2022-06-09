@@ -8,4 +8,4 @@ Actividades mudadas a sus propios repositorios.
 2. [Tesoreria-JPA](https://github.com/avacco/tesoreria-jpa)
 3. [CMS-Security](https://github.com/avacco/cms-security)
 4. [Catalogo-JPA](https://github.com/avacco/Catalogo-JPA)
-5. [Mantenedor-biblioteca](https://github.com/avacco/Mantenedor-biblioteca) (En progreso)
+5. [Mantenedor-biblioteca](https://github.com/avacco/Mantenedor-biblioteca)
